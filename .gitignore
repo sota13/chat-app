@@ -182,6 +182,5 @@ backend-env/
 media/
 draft.py
 backend/.env
-utils/
 draft/
 chat-env

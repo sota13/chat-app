@@ -7,7 +7,7 @@ import Message from '../ChatRoom/Message';
 import ActivityItem from '../Home/ActivityItem';
 
 function UserProfile() {
-  const params = useParams();
+  const { user_id } = useParams();
 
   const { user  } = useSelector(state => state.userState);
 
@@ -34,7 +34,9 @@ function UserProfile() {
             </div>
             <div className="profile__info">
               <h3>{user.first_name} {user.last_name}</h3>
-              <Link to={`/update-profile/${user.id}`} className="btn btn--main btn--pill">Edit Profile</Link>
+              {user_id == user.id ?
+                <Link to={`/update-profile/${user.id}`} className="btn btn--main btn--pill">Edit Profile</Link>
+              : null}
             </div>
             <div className="profile__about">
               <h3>About</h3>

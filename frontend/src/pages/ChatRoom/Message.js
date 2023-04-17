@@ -7,7 +7,7 @@ function Message({author, content, timestamp}) {
     <div className="thread">
         <div className="thread__top">
         <div className="thread__author">
-            <Link to={`/private-chat/${author.id}`} className="thread__authorInfo">
+            <Link to={`/profile/${author.id}`} className="thread__authorInfo">
             <span>{author.name}</span>
             </Link>
             
