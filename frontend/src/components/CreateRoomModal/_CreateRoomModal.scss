@@ -1,0 +1,56 @@
+@import "../../styles/abstracts/variables";
+
+
+.create-layout__box {
+  width: 90%;
+  max-width: 800;
+  min-height: 40rem;
+  margin: auto;
+  background-color: $color-dark;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 6px 3px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+  max-height: 70vh;
+  
+  button[disabled] {
+    background-color: $color-dark;
+    color: white;
+    cursor: default;
+
+  }
+}
+
+.create-layout__boxHeader {
+  display: flex;
+  padding: 1.5rem;
+  background-color: $color-dark-light;
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.create-layout__boxTitle {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.create-layout__boxTitle h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: $color-light;
+}
+
+.create-layout__boxTitle svg {
+  width: 1.6rem;
+  height: 1.6rem;
+  fill: $color-main;
+}
+
+.create-layout__body {
+  margin: 3rem;
+  height: 70vh;
+  overflow: auto;
+}

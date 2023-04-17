@@ -1,0 +1,21 @@
+
+@use "abstracts/reset";
+@use "abstracts/base";
+@use "abstracts/variables";
+
+
+
+@use "../components/Header/Header";
+@use "../components/Modal/Modal";
+@use "../components/SearchResultModal/SearchResultModal";
+@use "../components/CreateRoomModal/CreateRoomModal";
+@use "../components/Spinner/Spinnre";
+
+
+
+
+@use "../pages/Home/Home";
+@use "../pages/Login/Login";
+@use "../pages/Signup/Signup";
+@use "../pages/ChatRoom/ChatRoom";
+@use "../pages/UserProfile/UserProfile";

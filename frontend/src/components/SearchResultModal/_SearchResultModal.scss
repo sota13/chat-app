@@ -1,0 +1,49 @@
+@import "../../styles/abstracts/variables";
+
+
+.search-layout__box {
+  width: 90%;
+  max-width: 800;
+  min-height: 40rem;
+  margin: auto;
+  background-color: $color-dark;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 6px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-height: 70vh;
+}
+
+.search-layout__boxHeader {
+  display: flex;
+  padding: 1.5rem;
+  background-color: $color-dark-light;
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.search-layout__boxTitle {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.search-layout__boxTitle h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: $color-light;
+}
+
+.search-layout__boxTitle svg {
+  width: 1.6rem;
+  height: 1.6rem;
+  fill: $color-main;
+}
+
+.search-layout__body {
+  margin: 3rem;
+  height: 70vh;
+  overflow: auto;
+}

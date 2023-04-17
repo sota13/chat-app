@@ -1,0 +1,136 @@
+@import "../../styles/abstracts/variables";
+
+/*==============================
+=>  Update Account
+================================*/
+
+.update-box-layout {
+  
+    width: 90%;
+    max-width: 700px;
+    margin: 24px auto;
+    min-height: 40rem;
+    
+    background-color: var(--color-dark);
+    border-radius: 1rem;
+    box-shadow: 1px 1px 6px 3px rgba(0, 0, 0, 0.1);
+
+  
+  
+  
+  .layout__boxHeader {
+    display: flex;
+    padding: 1.5rem;
+    background-color: var(--color-dark-light);
+  }
+  
+  .layout__boxTitle {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  
+  .layout__boxTitle h3 {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--color-light);
+  }
+  
+  .layout__boxTitle svg {
+    width: 1.6rem;
+    height: 1.6rem;
+    fill: var(--color-main);
+  }
+  
+  .layout__body {
+    margin: 3rem;
+    max-height: 65vh;
+    overflow: auto;
+    padding-right: 10px;
+  }
+
+  .form__action {
+    display: flex;
+    justify-content: flex-end;
+    gap: 3rem;
+    margin-bottom: 16px;
+}
+}
+
+/*==============================
+=>  Settings
+================================*/
+
+.settings__avatar {
+  margin-bottom: 30px;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.settings__avatar .avatar {
+  margin: 10px;
+}
+
+/*==============================
+  =>  Profile
+  ================================*/
+.profile-page {
+  margin-top: 24px;
+  max-width: 900px;
+  margin: 24px auto;
+}
+
+
+.profile {
+  margin-bottom: 30px;
+}
+
+.profile__avatar {
+  text-align: center;
+}
+
+.profile__info {
+  text-align: center;
+}
+
+.profile__info h3 {
+  font-size: 20px;
+  color: $color-light;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+
+
+.profile__about {
+  margin-top: 20px;
+}
+
+.profile__about h3 {
+  text-transform: uppercase;
+  color: var(--color-dark-light);
+  margin-bottom: 5px;
+}
+
+
+
+.profile-groups__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.profile-groups__header h2 {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--color-dark-light);
+  letter-spacing: 1px;
+}
+
+.profile-groups__header p {
+  font-weight: 500;
+  color: $color-dark-light;
+}

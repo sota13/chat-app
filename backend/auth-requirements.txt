@@ -1,0 +1,9 @@
+django-cors-headers
+django-environ
+django-filter
+djangorestframework
+djangorestframework-simplejwt
+drf-yasg
+Markdown
+Pillow
+sendgrid
