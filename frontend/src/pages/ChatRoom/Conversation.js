@@ -3,6 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import Message from './Message'
 import MyMessage from './MyMessage'
 import WrapedSpinner from '../../components/Spinner/WrapedSpinner'
+import { useSelector } from 'react-redux'
 
 
 
@@ -12,6 +13,7 @@ function Conversation({messageHistory, sendJsonMessage, isLoading}) {
   const navigate = useNavigate()
   const {room_id} = useParams()
 
+  const { user  } = useSelector(state => state.userState);
   
   const [message, setMessage] = useState("");
 
@@ -81,7 +83,7 @@ function Conversation({messageHistory, sendJsonMessage, isLoading}) {
             <div className="room__conversation">
               <div className="threads" >
                 {messageHistory?.map(msg=>{
-                  if(msg.fromMe) {
+                  if(msg.author.id === user.id) {
                     return (
                       <div ref={scrollRef} key={msg.id}>
                         <MyMessage  {...msg}/>
